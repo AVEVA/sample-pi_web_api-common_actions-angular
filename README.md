@@ -109,5 +109,8 @@ The functionality included with this sample includes(recommended order of execut
 
 ---
 
-For the main PI Web API page [ReadMe](../../)  
-For the main landing page on master [ReadMe](https://github.com/osisoft/OSI-Samples)
+For the main PI Web API Samples landing page on master [ReadMe](https://github.com/osisoft/OSI-Samples-PI-System/tree/master/docs/PI-Web-API-Docs)
+
+For the main PI System Samples landing page on master [ReadMe](https://github.com/osisoft/OSI-Samples-PI-System)
+
+For the main OSIsoft Samples landing page on master [ReadMe](https://github.com/osisoft/OSI-Samples)
