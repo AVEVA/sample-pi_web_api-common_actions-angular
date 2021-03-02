@@ -2,7 +2,7 @@
 
 **Version:** 1.0.24
 
-[![Build Status](https://dev.azure.com/osieng/engineering/_apis/build/status/product-readiness/PI-System/osisoft.sample-pi_web_api-common_actions-angular?repoName=osisoft%2Fsample-pi_web_api-common_actions-angular&branchName=master)](https://dev.azure.com/osieng/engineering/_build/latest?definitionId=2647&repoName=osisoft%2Fsample-pi_web_api-common_actions-angular&branchName=master)
+[![Build Status](https://dev.azure.com/osieng/engineering/_apis/build/status/product-readiness/PI-System/osisoft.sample-pi_web_api-common_actions-angular?repoName=osisoft%2Fsample-pi_web_api-common_actions-angular&branchName=main)](https://dev.azure.com/osieng/engineering/_build/latest?definitionId=2647&repoName=osisoft%2Fsample-pi_web_api-common_actions-angular&branchName=main)
 
 The sample code in this folder demonstrates how to utilize the PI Web API in Angular. You must have already [configured your Angular development environment](https://angular.io/guide/quickstart) in order to run this sample application.
 
@@ -109,8 +109,8 @@ The functionality included with this sample includes(recommended order of execut
 
 ---
 
-For the main PI Web API Samples landing page on master [ReadMe](https://github.com/osisoft/OSI-Samples-PI-System/tree/master/docs/PI-Web-API-Docs)
+For the main PI Web API Samples landing page [ReadMe](https://github.com/osisoft/OSI-Samples-PI-System/tree/main/docs/PI-Web-API-Docs)
 
-For the main PI System Samples landing page on master [ReadMe](https://github.com/osisoft/OSI-Samples-PI-System)
+For the main PI System Samples landing page [ReadMe](https://github.com/osisoft/OSI-Samples-PI-System)
 
-For the main OSIsoft Samples landing page on master [ReadMe](https://github.com/osisoft/OSI-Samples)
+For the main OSIsoft Samples landing page [ReadMe](https://github.com/osisoft/OSI-Samples)
