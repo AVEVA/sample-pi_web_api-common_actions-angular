@@ -1,5 +1,10 @@
 # Version History
 
+## 1.0.25 / 2021-05-18
+
+- Updated pipeline to not specify node version
+- Updated pipeline to use `npm run test` in place of `ng test`
+
 ## 1.0.24 / 2021-03-03
 
 - Updated pipeline to reference main branch
