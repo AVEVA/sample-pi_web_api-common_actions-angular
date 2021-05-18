@@ -47,4 +47,5 @@ testem.log
 Thumbs.db
 
 # Credential files
-test_config.ts
+test-config.ts
+product-readiness.*
