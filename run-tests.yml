@@ -2,13 +2,13 @@ parameters:
   projectPath: ''
 
 steps:
-    - script: npm ci
-      workingDirectory: ${{ parameters.projectPath }}
-      displayName: 'Install dependencies'
+  - script: npm ci
+    workingDirectory: ${{ parameters.projectPath }}
+    displayName: 'Install dependencies'
 
-    - script: ng test --watch=false
-      workingDirectory: ${{ parameters.projectPath }}
-      displayName: 'Run tests'
+  - script: ng test --watch=false
+    workingDirectory: ${{ parameters.projectPath }}
+    displayName: 'Run tests'
 
   - task: PublishTestResults@2
     condition: succeededOrFailed()
