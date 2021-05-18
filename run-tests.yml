@@ -6,7 +6,7 @@ steps:
     workingDirectory: ${{ parameters.projectPath }}
     displayName: 'Install dependencies'
 
-  - script: ng test --watch=false
+  - script: npm run test -- --watch=false
     workingDirectory: ${{ parameters.projectPath }}
     displayName: 'Run tests'
 
