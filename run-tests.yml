@@ -2,22 +2,14 @@ parameters:
   projectPath: ''
 
 steps:
-  - task: NodeTool@0
-    inputs:
-      versionSpec: '10.x'
-    displayName: 'Specify Node version'
-  
-  - script: |
-      echo Install Angular CLI
-      call npm install -g @angular/cli
-      echo NPM CI
-      call npm ci
-      echo Run tests
-      call ng test --watch=false
-      echo Complete
+  - script: npm ci
+    workingDirectory: ${{ parameters.projectPath }}
+    displayName: 'Install dependencies'
+
+  - script: npm run test -- --watch=false
     workingDirectory: ${{ parameters.projectPath }}
     displayName: 'Run tests'
-  
+
   - task: PublishTestResults@2
     condition: succeededOrFailed()
     inputs:
