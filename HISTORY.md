@@ -1,5 +1,9 @@
 # Version History
 
+## 1.0.26 / 2021-05-21
+
+- Updated dependencies
+
 ## 1.0.25 / 2021-05-18
 
 - Updated pipeline to not specify node version

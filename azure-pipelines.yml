@@ -48,4 +48,20 @@ jobs:
         parameters:
           projectPath: $(Build.SourcesDirectory)
 
+  - job: Analysis
+    pool:
+      name: 00-OSIManaged-Containers
+      demands: Agent.OS -equals Windows_NT
+    steps:
+      - template: '/miscellaneous/build_templates/config.yml@templates'
+        parameters:
+          fileOriginal: $(CredFile)
+          fileLibrary: $(CredFileLibrary)
+
+      - script: npm ci
+        displayName: 'Install dependencies'
+
+      - script: npm run build
+        displayName: 'Build'
+
       - template: '/miscellaneous/build_templates/analysis.yml@templates'
