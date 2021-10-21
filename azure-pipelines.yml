@@ -26,10 +26,6 @@ resources:
 
 variables:
   - template: '/miscellaneous/build_templates/variables.yml@templates'
-  - name: CredFile
-    value: test-config.ts
-  - name: CredFileLibrary
-    value: product-readiness.piwebapi_angular.ts
   - name: analysisProject
     value: PIWebAPI_Angular
 
@@ -39,10 +35,9 @@ jobs:
       name: 00-OSIManaged-Test
       demands: COMPUTERNAME -equals $(buildAgent)
     steps:
-      - template: '/miscellaneous/build_templates/config.yml@templates'
+      - template: '/miscellaneous/build_templates/appsettings.yml@templates'
         parameters:
-          fileOriginal: $(CredFile)
-          fileLibrary: $(CredFileLibrary)
+          secrets: 'PIWebAPI, AFServerName, DataArchiveName, Username, Password'
 
       - template: '/run-tests.yml'
         parameters:
@@ -53,10 +48,9 @@ jobs:
       name: 00-OSIManaged-Containers
       demands: Agent.OS -equals Windows_NT
     steps:
-      - template: '/miscellaneous/build_templates/config.yml@templates'
+      - template: '/miscellaneous/build_templates/appsettings.yml@templates'
         parameters:
-          fileOriginal: $(CredFile)
-          fileLibrary: $(CredFileLibrary)
+          secrets: 'PIWebAPI, AFServerName, DataArchiveName, Username, Password'
 
       - script: npm ci
         displayName: 'Install dependencies'

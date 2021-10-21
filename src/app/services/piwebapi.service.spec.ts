@@ -2,11 +2,11 @@ import { TestBed } from '@angular/core/testing';
 import { HttpClientModule } from '@angular/common/http';
 
 import { PIWebAPIService } from './piwebapi.service';
-import { testConfig } from '../../../test-config';
+import appsettings from '../../../appsettings.json';
 
 // Increase timeout interval for longer running http calls.
-if (testConfig.DEFAULT_TIMEOUT_INTERVAL) {
-  jasmine.DEFAULT_TIMEOUT_INTERVAL = testConfig.DEFAULT_TIMEOUT_INTERVAL;
+if (appsettings.DEFAULT_TIMEOUT_INTERVAL) {
+  jasmine.DEFAULT_TIMEOUT_INTERVAL = appsettings.DEFAULT_TIMEOUT_INTERVAL;
 }
 
 describe('Service: PIWebAPIService', () => {
@@ -31,11 +31,11 @@ describe('Service: PIWebAPIService', () => {
     //  make the createDatabase call and make sure the return code matches what we expect - 201
     testService
       .createDatabase(
-        testConfig.piWebApiUrl,
-        testConfig.assetServer,
-        testConfig.userName,
-        testConfig.userPassword,
-        testConfig.authType
+        appsettings.PIWebAPI,
+        appsettings.AFServerName,
+        appsettings.Username,
+        appsettings.Password,
+        appsettings.AuthType
       )
       .subscribe((response) => {
         expect(response.returnCode).toEqual(201);
@@ -50,11 +50,11 @@ describe('Service: PIWebAPIService', () => {
     //  make the createCategory call and make sure the return code matches what we expect - 201
     testService
       .createCategory(
-        testConfig.piWebApiUrl,
-        testConfig.assetServer,
-        testConfig.userName,
-        testConfig.userPassword,
-        testConfig.authType
+        appsettings.PIWebAPI,
+        appsettings.AFServerName,
+        appsettings.Username,
+        appsettings.Password,
+        appsettings.AuthType
       )
       .subscribe((response) => {
         expect(response.returnCode).toEqual(201);
@@ -69,12 +69,12 @@ describe('Service: PIWebAPIService', () => {
     //  make the createTemplate call and make sure the return code matches what we expect - 201
     testService
       .createTemplate(
-        testConfig.piWebApiUrl,
-        testConfig.assetServer,
-        testConfig.piServer,
-        testConfig.userName,
-        testConfig.userPassword,
-        testConfig.authType
+        appsettings.PIWebAPI,
+        appsettings.AFServerName,
+        appsettings.DataArchiveName,
+        appsettings.Username,
+        appsettings.Password,
+        appsettings.AuthType
       )
       .subscribe((response) => {
         expect(response.returnCode).toEqual(201);
@@ -89,11 +89,11 @@ describe('Service: PIWebAPIService', () => {
     //  make the createElement call and make sure the return code matches what we expect - 200
     testService
       .createElement(
-        testConfig.piWebApiUrl,
-        testConfig.assetServer,
-        testConfig.userName,
-        testConfig.userPassword,
-        testConfig.authType
+        appsettings.PIWebAPI,
+        appsettings.AFServerName,
+        appsettings.Username,
+        appsettings.Password,
+        appsettings.AuthType
       )
       .subscribe((response) => {
         expect(response.returnCode).toEqual(200);
@@ -108,11 +108,11 @@ describe('Service: PIWebAPIService', () => {
     //  make the writeSingleValue call and make sure the return code matches what we expect - 202
     testService
       .writeSingleValue(
-        testConfig.piWebApiUrl,
-        testConfig.assetServer,
-        testConfig.userName,
-        testConfig.userPassword,
-        testConfig.authType
+        appsettings.PIWebAPI,
+        appsettings.AFServerName,
+        appsettings.Username,
+        appsettings.Password,
+        appsettings.AuthType
       )
       .subscribe((response) => {
         expect(response.returnCode).toEqual(202);
@@ -127,11 +127,11 @@ describe('Service: PIWebAPIService', () => {
     //  make the writeSetOfValues call and make sure the return code matches what we expect - 202
     testService
       .writeSetOfValues(
-        testConfig.piWebApiUrl,
-        testConfig.assetServer,
-        testConfig.userName,
-        testConfig.userPassword,
-        testConfig.authType
+        appsettings.PIWebAPI,
+        appsettings.AFServerName,
+        appsettings.Username,
+        appsettings.Password,
+        appsettings.AuthType
       )
       .subscribe((response) => {
         expect(response.returnCode).toEqual(202);
@@ -146,11 +146,11 @@ describe('Service: PIWebAPIService', () => {
     //  make the updateAttributeValue call and make sure the return code matches what we expect - 204
     testService
       .updateAttributeValue(
-        testConfig.piWebApiUrl,
-        testConfig.assetServer,
-        testConfig.userName,
-        testConfig.userPassword,
-        testConfig.authType
+        appsettings.PIWebAPI,
+        appsettings.AFServerName,
+        appsettings.Username,
+        appsettings.Password,
+        appsettings.AuthType
       )
       .subscribe((response) => {
         expect(response.returnCode).toEqual(204);
@@ -165,11 +165,11 @@ describe('Service: PIWebAPIService', () => {
     //  make the readSingleValue call and make sure the return code matches what we expect - 200
     testService
       .readSingleValue(
-        testConfig.piWebApiUrl,
-        testConfig.assetServer,
-        testConfig.userName,
-        testConfig.userPassword,
-        testConfig.authType
+        appsettings.PIWebAPI,
+        appsettings.AFServerName,
+        appsettings.Username,
+        appsettings.Password,
+        appsettings.AuthType
       )
       .subscribe((response) => {
         expect(response.returnCode).toEqual(200);
@@ -184,11 +184,11 @@ describe('Service: PIWebAPIService', () => {
     //  make the readSetOfValues call and make sure the return code matches what we expect - 200
     testService
       .readSetOfValues(
-        testConfig.piWebApiUrl,
-        testConfig.assetServer,
-        testConfig.userName,
-        testConfig.userPassword,
-        testConfig.authType
+        appsettings.PIWebAPI,
+        appsettings.AFServerName,
+        appsettings.Username,
+        appsettings.Password,
+        appsettings.AuthType
       )
       .subscribe((response) => {
         expect(response.returnCode).toEqual(200);
@@ -203,11 +203,11 @@ describe('Service: PIWebAPIService', () => {
     //  make the reducePayloadWithSelectedFields call and make sure the return code matches what we expect - 200
     testService
       .reducePayloadWithSelectedFields(
-        testConfig.piWebApiUrl,
-        testConfig.assetServer,
-        testConfig.userName,
-        testConfig.userPassword,
-        testConfig.authType
+        appsettings.PIWebAPI,
+        appsettings.AFServerName,
+        appsettings.Username,
+        appsettings.Password,
+        appsettings.AuthType
       )
       .subscribe((response) => {
         expect(response.returnCode).toEqual(200);
@@ -222,11 +222,11 @@ describe('Service: PIWebAPIService', () => {
     //  make the doBatchCall call and make sure the return code matches what we expect - 207
     testService
       .doBatchCall(
-        testConfig.piWebApiUrl,
-        testConfig.assetServer,
-        testConfig.userName,
-        testConfig.userPassword,
-        testConfig.authType
+        appsettings.PIWebAPI,
+        appsettings.AFServerName,
+        appsettings.Username,
+        appsettings.Password,
+        appsettings.AuthType
       )
       .subscribe((response) => {
         expect(response.returnCode).toEqual(207);
@@ -241,11 +241,11 @@ describe('Service: PIWebAPIService', () => {
     //  make the deleteElement call and make sure the return code matches what we expect - 204
     testService
       .deleteElement(
-        testConfig.piWebApiUrl,
-        testConfig.assetServer,
-        testConfig.userName,
-        testConfig.userPassword,
-        testConfig.authType
+        appsettings.PIWebAPI,
+        appsettings.AFServerName,
+        appsettings.Username,
+        appsettings.Password,
+        appsettings.AuthType
       )
       .subscribe((response) => {
         expect(response.returnCode).toEqual(204);
@@ -260,11 +260,11 @@ describe('Service: PIWebAPIService', () => {
     //  make the deleteTemplate call and make sure the return code matches what we expect - 204
     testService
       .deleteTemplate(
-        testConfig.piWebApiUrl,
-        testConfig.assetServer,
-        testConfig.userName,
-        testConfig.userPassword,
-        testConfig.authType
+        appsettings.PIWebAPI,
+        appsettings.AFServerName,
+        appsettings.Username,
+        appsettings.Password,
+        appsettings.AuthType
       )
       .subscribe((response) => {
         expect(response.returnCode).toEqual(204);
@@ -279,11 +279,11 @@ describe('Service: PIWebAPIService', () => {
     //  make the deleteCategory call and make sure the return code matches what we expect - 204
     testService
       .deleteCategory(
-        testConfig.piWebApiUrl,
-        testConfig.assetServer,
-        testConfig.userName,
-        testConfig.userPassword,
-        testConfig.authType
+        appsettings.PIWebAPI,
+        appsettings.AFServerName,
+        appsettings.Username,
+        appsettings.Password,
+        appsettings.AuthType
       )
       .subscribe((response) => {
         expect(response.returnCode).toEqual(204);
@@ -298,11 +298,11 @@ describe('Service: PIWebAPIService', () => {
     //  make the deleteDatabase call and make sure the return code matches what we expect - 204
     testService
       .deleteDatabase(
-        testConfig.piWebApiUrl,
-        testConfig.assetServer,
-        testConfig.userName,
-        testConfig.userPassword,
-        testConfig.authType
+        appsettings.PIWebAPI,
+        appsettings.AFServerName,
+        appsettings.Username,
+        appsettings.Password,
+        appsettings.AuthType
       )
       .subscribe((response) => {
         expect(response.returnCode).toEqual(204);
