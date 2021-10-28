@@ -1,9 +1,13 @@
 # Version History
 
-## 1.0.30 / 2021-10-28
+## 1.0.31 / 2021-10-28
 
 - Update pipelines to use Azure Key Vault for secrets
 - changed test-config.ts to appsettings.json
+
+## 1.0.30 / 2021-10-21
+
+- Updated dependencies
 
 ## 1.0.29 / 2021-07-15
 
