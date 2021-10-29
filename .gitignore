@@ -48,4 +48,5 @@ Thumbs.db
 
 # Credential files
 test-config.ts
+appsettings.json
 product-readiness.*

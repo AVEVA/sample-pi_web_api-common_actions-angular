@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome 95.0.4638.54 (Windows 10)" package="" timestamp="2021-10-21T20:21:52" id="0" hostname="CBARDINI5540" tests="16" errors="0" failures="0" time="2.991">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36"/>
+  </properties>
+  <testcase name="Service: PIWebAPIService PIWebAPIService should be created" time="0.026" classname="Chrome_95_0_4638_54_(Windows_10).Service: PIWebAPIService"/>
+  <testcase name="Service: PIWebAPIService creating a new database should return a 201" time="0.246" classname="Chrome_95_0_4638_54_(Windows_10).Service: PIWebAPIService"/>
+  <testcase name="Service: PIWebAPIService creating a new category should return a 201" time="0.15" classname="Chrome_95_0_4638_54_(Windows_10).Service: PIWebAPIService"/>
+  <testcase name="Service: PIWebAPIService creating a new template should return a 201" time="0.699" classname="Chrome_95_0_4638_54_(Windows_10).Service: PIWebAPIService"/>
+  <testcase name="Service: PIWebAPIService creating a new element should return a 200" time="0.376" classname="Chrome_95_0_4638_54_(Windows_10).Service: PIWebAPIService"/>
+  <testcase name="Service: PIWebAPIService writing a single value should return a 202" time="0.16" classname="Chrome_95_0_4638_54_(Windows_10).Service: PIWebAPIService"/>
+  <testcase name="Service: PIWebAPIService writing a set of values should return a 202" time="0.116" classname="Chrome_95_0_4638_54_(Windows_10).Service: PIWebAPIService"/>
+  <testcase name="Service: PIWebAPIService updating an attribute value should return a 204" time="0.202" classname="Chrome_95_0_4638_54_(Windows_10).Service: PIWebAPIService"/>
+  <testcase name="Service: PIWebAPIService reading a single value should return a 200" time="0.078" classname="Chrome_95_0_4638_54_(Windows_10).Service: PIWebAPIService"/>
+  <testcase name="Service: PIWebAPIService reading a set of values should return a 200" time="0.121" classname="Chrome_95_0_4638_54_(Windows_10).Service: PIWebAPIService"/>
+  <testcase name="Service: PIWebAPIService reading a set of values while reducing payload with selected fields should return a 200" time="0.115" classname="Chrome_95_0_4638_54_(Windows_10).Service: PIWebAPIService"/>
+  <testcase name="Service: PIWebAPIService performing a batch call should return a 207" time="0.132" classname="Chrome_95_0_4638_54_(Windows_10).Service: PIWebAPIService"/>
+  <testcase name="Service: PIWebAPIService deleting an element should return a 204" time="0.171" classname="Chrome_95_0_4638_54_(Windows_10).Service: PIWebAPIService"/>
+  <testcase name="Service: PIWebAPIService deleting a template should return a 204" time="0.152" classname="Chrome_95_0_4638_54_(Windows_10).Service: PIWebAPIService"/>
+  <testcase name="Service: PIWebAPIService deleting a category should return a 204" time="0.152" classname="Chrome_95_0_4638_54_(Windows_10).Service: PIWebAPIService"/>
+  <testcase name="Service: PIWebAPIService deleting a database should return a 204" time="0.095" classname="Chrome_95_0_4638_54_(Windows_10).Service: PIWebAPIService"/>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>
