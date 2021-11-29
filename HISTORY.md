@@ -1,5 +1,9 @@
 # Version History
 
+## 1.0.33 / 2021-12-07
+
+- Update pipelines to reference internal analysis templates
+
 ## 1.0.32 / 2021-11-5
 
 - Changed agent used in pipeline
