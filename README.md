@@ -1,6 +1,6 @@
 # PI Web API Angular Sample
 
-**Version:** 1.0.33
+**Version:** 1.0.34
 
 [![Build Status](https://dev.azure.com/osieng/engineering/_apis/build/status/product-readiness/PI-System/osisoft.sample-pi_web_api-common_actions-angular?repoName=osisoft%2Fsample-pi_web_api-common_actions-angular&branchName=main)](https://dev.azure.com/osieng/engineering/_build/latest?definitionId=2647&repoName=osisoft%2Fsample-pi_web_api-common_actions-angular&branchName=main)
 
@@ -113,4 +113,4 @@ For the main PI Web API Samples landing page [ReadMe](https://github.com/osisoft
 
 For the main PI System Samples landing page [ReadMe](https://github.com/osisoft/OSI-Samples-PI-System)
 
-For the main OSIsoft Samples landing page [ReadMe](https://github.com/osisoft/OSI-Samples)
+For the main AVEVA Samples landing page [ReadMe](https://github.com/osisoft/OSI-Samples)
