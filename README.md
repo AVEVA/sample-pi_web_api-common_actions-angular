@@ -1,6 +1,6 @@
 # PI Web API Angular Sample
 
-**Version:** 1.0.35
+**Version:** 1.0.36
 
 [![Build Status](https://dev.azure.com/osieng/engineering/_apis/build/status/product-readiness/PI-System/osisoft.sample-pi_web_api-common_actions-angular?repoName=osisoft%2Fsample-pi_web_api-common_actions-angular&branchName=main)](https://dev.azure.com/osieng/engineering/_build/latest?definitionId=2647&repoName=osisoft%2Fsample-pi_web_api-common_actions-angular&branchName=main)
 
@@ -48,7 +48,7 @@ For example:
 - If you run into any issues with the Jasmine tests timing out, use the `DEFAULT_TIMEOUT_INTERVAL` setting in `appsettings.json` and set it to a higher value. For example:
 
 ```json
-"DEFAULT_TIMEOUT_INTERVAL": null
+"DEFAULT_TIMEOUT_INTERVAL": 10000
 ```
 
 ## System Configuration

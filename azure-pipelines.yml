@@ -38,10 +38,13 @@ jobs:
     pool:
       name: 00-OSIManaged-Containers
       demands: Agent.OS -equals Windows_NT
+    variables:
+      - name: DEFAULT_TIMEOUT_INTERVAL
+        value: $(DefaultTimeoutInterval)
     steps:
       - template: '/miscellaneous/build_templates/appsettings.yml@templates'
         parameters:
-          secrets: 'PIWebAPI, AFServerName, DataArchiveName, Username, Password'
+          secrets: 'PIWebAPI, AFServerName, DataArchiveName, Username, Password, DefaultTimeoutInterval'
 
       - template: '/run-tests.yml'
         parameters:

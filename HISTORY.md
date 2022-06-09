@@ -1,5 +1,10 @@
 # Version History
 
+## 1.0.36 / 2022-06-09
+
+- Changed pipeline to dynamically pull the timeout value from Azure
+- Updated dependencies
+
 ## 1.0.35 / 2022-03-15
 
 - Updated dependencies
