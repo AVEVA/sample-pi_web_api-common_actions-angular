@@ -1,5 +1,10 @@
 # Version History
 
+## 1.0.36 / 2022-06-09
+
+- Parameterize the Azure Pipeline's timeout value
+- Updated dependencies
+
 ## 1.0.35 / 2022-03-15
 
 - Updated dependencies
