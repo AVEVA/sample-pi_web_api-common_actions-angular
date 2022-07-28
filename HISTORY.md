@@ -1,5 +1,9 @@
 # Version History
 
+## 1.0.38 / 2022-07-28
+
+- Replace tslint with eslint
+
 ## 1.0.37 / 2022-06-20
 
 - Updated dependencies

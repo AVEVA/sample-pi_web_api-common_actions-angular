@@ -1,6 +1,6 @@
 {
   "name": "angular-piweb-apisample",
-  "version": "1.0.37",
+  "version": "1.0.38",
   "scripts": {
     "ng": "ng",
     "prestart": "echo 'WARNING: The web server used in this sample is intended for use in testing or debugging sample applications locally. It has not been reviewed for security issues.'",
@@ -36,7 +36,10 @@
     "@types/jasmine": "^4.0.3",
     "@types/jasminewd2": "^2.0.10",
     "@types/node": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "@typescript-eslint/parser": "^5.31.0",
     "codelyzer": "^0.0.28",
+    "eslint": "^8.20.0",
     "jasmine-core": "^4.2.0",
     "jasmine-spec-reporter": "~7.0.0",
     "karma": "^6.4.0",
