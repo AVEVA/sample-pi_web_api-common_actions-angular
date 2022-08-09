@@ -1,5 +1,10 @@
 # Version History
 
+## 1.0.39 / 2022-08-09
+
+- Add dependabot.yml to automate dependency checks
+- Remove weekly tests
+
 ## 1.0.38 / 2022-07-28
 
 - Replace tslint with eslint
