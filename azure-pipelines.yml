@@ -36,12 +36,18 @@ variables:
 parameters:
   - name: DefaultTimeoutInterval
     default: 20000
+  - name: pool
+    default: 00-OSIManaged-Containers
+  - name: containerDemands
+    type: object
+    default: ['Agent.OS -equals Windows_NT']
 
 jobs:
   - job: Tests
+    condition: ne(variables['Build.Reason'], 'Schedule')
     pool:
-      name: 00-OSIManaged-Containers
-      demands: Agent.OS -equals Windows_NT
+      name: ${{ parameters.pool }}
+      demands: ${{ parameters.containerDemands }}
     variables:
       - name: DEFAULT_TIMEOUT_INTERVAL
         value: ${{ parameters.DefaultTimeoutInterval }}
