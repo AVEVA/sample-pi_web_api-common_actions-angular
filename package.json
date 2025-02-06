@@ -33,7 +33,7 @@
     "@angular/cli": "^18.2.11",
     "@angular/compiler-cli": "^14.0.2",
     "@angular/language-service": "^18.2.11",
-    "@types/jasmine": "^4.3.5",
+    "@types/jasmine": "^5.1.5",
     "@types/jasminewd2": "^2.0.10",
     "@types/node": "^22.9.0",
     "@typescript-eslint/parser": "^8.23.0",
